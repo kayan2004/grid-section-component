@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+
   padding: 10vh 0 10vh 0;
   font-size: 13px;
 }
@@ -92,8 +92,15 @@ p {
 }
 
 @media screen and (min-width: 900px) {
+  article {
+    padding: 25px 25px 10px 25px;
+  }
+  p {
+    line-height: 21px;
+  }
   body {
     padding: 0;
+    height: 100vh;
   }
   .container {
     justify-content: center;
@@ -101,7 +108,7 @@ p {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 25px;
-    padding: 10rem;
+    padding: 5rem;
   }
   article {
     margin: 0;
@@ -125,5 +132,10 @@ p {
   #patrick {
     grid-row: 2;
     grid-column: 2/4;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    padding: 20rem;
   }
 }
